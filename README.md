@@ -1,11 +1,11 @@
 ## Usage
 
-To use the `redapi` library to fetch information about a subreddit and its top post, follow these instructions:
+To use the `rapi` library to fetch information about a subreddit and its top post, follow these instructions:
 
-1. Import the `redapi` library in your Python script:
+1. Import the `rapi` library in your Python script:
 
     ```python
-    import redapi
+    import rapi
     ```
 
 2. Use the `get_subreddit` function to retrieve information about a subreddit and its top post. Customize the function parameters based on your requirements:
@@ -30,7 +30,7 @@ To use the `redapi` library to fetch information about a subreddit and its top p
 Here's an example of how to use the `get_subreddit` function:
 
 ```python
-import redapi
+import rapi
 
 subreddit = get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
 
