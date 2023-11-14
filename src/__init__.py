@@ -1,1 +1,1 @@
-from .redapi import *
+from .redapi import get_subreddit
