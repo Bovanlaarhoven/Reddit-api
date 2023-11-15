@@ -13,7 +13,7 @@ To use the `rapi` library to fetch information about a subreddit and its top pos
 
     ```python
     import rapi
-    get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
+    get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False, sort="hot")
     ```
 
     - `subreddit`: Replace "memes" with the subreddit you want to fetch information from.
@@ -32,6 +32,6 @@ Here's an example of how to use the `get_subreddit` function:
 
 ```python
 import rapi
-result = get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
+result = get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False, sort="hot")
 print(result)
 ```
