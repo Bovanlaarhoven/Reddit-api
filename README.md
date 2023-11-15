@@ -35,12 +35,3 @@ import rapi
 result = get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
 print(result)
 ```
-
-Replace the function parameters with your specific requirements.
-
-## License
-
-Include information about the license for your project.
-```
-
-Feel free to customize this template according to the specifics of your project and any additional information you want to provide in your README.md.
