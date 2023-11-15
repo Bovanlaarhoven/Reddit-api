@@ -3,15 +3,16 @@
 
 To use the `rapi` library to fetch information about a subreddit and its top post, follow these instructions:
 
-1. Import the `rapi` library in your Python script:
+1. Install the `rapi` library:
+
+    ```python
+    pip install rapi==1.0
+    ```
+
+2. Import rapi and then use the `get_subreddit` function to retrieve information about a subreddit and its top post. Customize the function parameters based on your requirements:
 
     ```python
     import rapi
-    ```
-
-2. Use the `get_subreddit` function to retrieve information about a subreddit and its top post. Customize the function parameters based on your requirements:
-
-    ```python
     get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
     ```
 
@@ -31,7 +32,8 @@ Here's an example of how to use the `get_subreddit` function:
 
 ```python
 import rapi
-get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
+result = get_subreddit(subreddit="memes", limit=1, type="title", username=True, post_link=True, comments=False)
+print(result)
 ```
 
 Replace the function parameters with your specific requirements.
